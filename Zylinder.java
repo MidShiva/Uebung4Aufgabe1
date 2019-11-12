@@ -10,7 +10,8 @@ public class Zylinder {
 	 * @param hoehe
 	 */
 	public Zylinder(int radius, int hoehe) {
-		
+		this.radius = radius;
+		this.hoehe = hoehe;
 	}
 	
 	/**
@@ -18,7 +19,7 @@ public class Zylinder {
 	 * @return den Oberfleacheninhalt
 	 */
 	public float Oberflaecheninhalt() {
-		return 0f;
+		return (2*Grundflaeche()+Mantelflaeche());
 	}
 	
 	/**
@@ -26,14 +27,22 @@ public class Zylinder {
 	 * @return das Gesamtvolumen
 	 */
 	public float Volumen() {
-		return 0f;
+		return (Grundflaeche()*hoehe);
 	}
 	
 	/**
 	 * Berechnet die Mantelflaeche des Zylinders
 	 * @return die Mantelflaeche
 	 */
-	public float Mantelfleache() {
-		return 0f;
+	public float Mantelflaeche() {
+		return (2*pi()*radius*hoehe);
+	}
+
+	public float Grundflaeche() {
+		return (pi()*(radius*radius));
+	}
+
+	public float pi() {
+		return 3.14159265359f;
 	}
 }
