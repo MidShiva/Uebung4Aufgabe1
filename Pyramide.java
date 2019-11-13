@@ -7,7 +7,8 @@ public class Pyramide {
 	private int hoehe;
 	
 	public Pyramide (int grundseite, int hoehe) {
-		
+		this.grundseite = grundseite;
+		this.hoehe = hoehe;
 	}
 	
 	/**
@@ -15,7 +16,7 @@ public class Pyramide {
 	 * @return den Oberfleacheninhalt
 	 */
 	public float Oberflaecheninhalt() {
-		return 0f;
+		return (Grundflaeche() + 4 * (grundseite*hoehe/2));
 	}
 	
 	/**
@@ -23,14 +24,14 @@ public class Pyramide {
 	 * @return das Gesamtvolumen
 	 */
 	public float Volumen() {
-		return 0f;
+		return (Grundflaeche()*hoehe/3);
 	}
 	
 	/**
 	 * Berechnet die Grundfleache der Pyramide
 	 * @return die Grundfleache
 	 */
-	public float Grundfleache() {
-		return 0f;
+	public float Grundflaeche() {
+		return (grundseite * grundseite);
 	}
 }
