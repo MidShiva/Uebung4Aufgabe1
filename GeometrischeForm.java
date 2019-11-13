@@ -15,17 +15,17 @@ public class GeometrischeForm {
 		System.out.println("Kegel: r = 3, h = 5");
 		System.out.println("\tOberfleache: " + kegel1.Oberflaecheninhalt() + " (erwartet: ~ 83.23)");
 		System.out.println("\tVolumen: " + kegel1.Volumen() + " (erwartet: ~ 47.12)");
-		System.out.println("\tMantel: " + kegel1.Mantelfleache() + " (erwartet: ~ 54.95)" + System.lineSeparator());
+		System.out.println("\tMantel: " + kegel1.Mantelflaeche() + " (erwartet: ~ 54.95)" + System.lineSeparator());
 		
 		System.out.println("Zylinder: r = 3, h = 8");
 		System.out.println("\tOberfleache: " + zylinder1.Oberflaecheninhalt() + " (erwartet: ~ 207.34)");
 		System.out.println("\tVolumen: " + zylinder1.Volumen() + " (erwartet: ~ 226.19)");
-		System.out.println("\tMantel: " + zylinder1.Mantelfleache() + " (erwartet: ~ 150.79)" + System.lineSeparator());
+		System.out.println("\tMantel: " + zylinder1.Mantelflaeche() + " (erwartet: ~ 150.79)" + System.lineSeparator());
 		
 		System.out.println("Pyramide: a = 3, h = 6");
 		System.out.println("\tOberfleache: " + pyramide1.Oberflaecheninhalt() + " (erwartet: ~ 46.10)");
 		System.out.println("\tVolumen: " + pyramide1.Volumen() + " (erwartet: 18)");
-		System.out.println("\tMantel: " + pyramide1.Grundfleache() + " (erwartet: 9)");
+		System.out.println("\tMantel: " + pyramide1.Grundflaeche() + " (erwartet: 9)");
 	}
 
 }
