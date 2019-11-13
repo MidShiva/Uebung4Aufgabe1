@@ -1,7 +1,7 @@
-import java.lang.Math;
+
 
 public class Kugel {
-	
+	private float pi = 3.14159265359f;
 	private int radius;
 	
 	/**
@@ -17,7 +17,7 @@ public class Kugel {
 	 * @return den Oberfleacheninhalt
 	 */
 	public float Oberflaecheninhalt() {
-		return Math.PI*4*(r*r);
+		return pi * 4 * (radius*radius);
 	}
 	
 	/**
@@ -25,6 +25,6 @@ public class Kugel {
 	 * @return das Gesamtvolumen
 	 */
 	public float Volumen() {
-		return (4/3)*Math.PI*(r*r*r);
+		return (4/3) * pi * (radius*radius*radius);
 	}
 }
