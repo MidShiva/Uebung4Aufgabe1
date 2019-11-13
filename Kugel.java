@@ -1,3 +1,4 @@
+import java.lang.Math;
 
 public class Kugel {
 	
@@ -8,7 +9,7 @@ public class Kugel {
 	 * @param radius
 	 */
 	public Kugel(int radius) {
-		
+		this.radius = radius;
 	}
 	
 	/**
@@ -16,7 +17,7 @@ public class Kugel {
 	 * @return den Oberfleacheninhalt
 	 */
 	public float Oberflaecheninhalt() {
-		return 0f;
+		return Math.PI*4*(r*r);
 	}
 	
 	/**
@@ -24,6 +25,6 @@ public class Kugel {
 	 * @return das Gesamtvolumen
 	 */
 	public float Volumen() {
-		return 0f;
+		return (4/3)*Math.PI*(r*r*r);
 	}
 }
